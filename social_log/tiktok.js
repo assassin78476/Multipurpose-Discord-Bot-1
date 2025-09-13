@@ -22,11 +22,20 @@ module.exports = client => {
   client.on('ready', () => {
     client.Jobtiktok.start();
     setTimeout(() => {
-      check(client.guilds.cache.get('1156124652272357450'));
+      const guild = client.guilds.cache.get('1156124652272357450');
+      if (guild) {
+        check(guild);
+      } else {
+        console.log(` [TIKTOK] | ${moment().format("ddd DD-MM-YYYY HH:mm:ss.SSSS")} | Guild with ID '1156124652272357450' not found or bot not connected to it`.italic.brightMagenta);
+      }
     });
   });
 
   async function check(guild) {
+    if (!guild) {
+      console.log(` [TIKTOK] | ${moment().format("ddd DD-MM-YYYY HH:mm:ss.SSSS")} | Guild is undefined or null`.italic.brightMagenta);
+      return;
+    }
     console.log(` [TIKTOK] | ${moment().format("ddd DD-MM-YYYY HH:mm:ss.SSSS")} | ${guild.name} :: Currently Disabled the TIKTOK Logger`.italic.brightMagenta);
     console.log(` [TIKTOK] | ${moment().format("ddd DD-MM-YYYY HH:mm:ss.SSSS")} | ${guild.name} :: Checking Accounts...`.italic.brightMagenta);
 

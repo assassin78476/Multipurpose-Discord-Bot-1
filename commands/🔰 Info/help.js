@@ -261,20 +261,20 @@ module.exports = {
         .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
         .setFooter("Page Overview\n"+ client.user.username, client.user.displayAvatarURL())
                 .setTitle(`Information about __${client.user.username}__`)
-        .addField("<a:Features:1156130907586039828> **__My Features__**",
+        .addField("<a:Features:1416090481401528390> **__My Features__**",
         `>>> **58+ Systems**, including:
-        <:Twitter:1156127703490109470> **Twitter Auto-Poster**
-        <a:youtube:1252633432526164069> **YouTube Auto-Poster**
-        <:Ticket:1156129515043569734> **Ticket System**
-        <:welcome:1248946024324534283> **Welcome Images**
-        <:Reaction_role:1156130233292947486> **Reaction Role System**
-        <:system:1156133830072221786> **Systems Like**
-        <a:Music:1156197872224706560> Advanced <:Spotify:1156129087270699038> **Music System** with **Audio Filtering**
-        <a:Games:1156235023071059999> **150+ Mini-games** and **Fun Commands**
-        <a:Admin:1156234655889100860> **Administration** and **Auto-Moderation** features
+        <:Twitter:1416091768197353512> **Twitter Auto-Poster**
+        <:Youtube:1416092086872182934> **YouTube Auto-Poster**
+        <:Ticket:1416092557741391892> **Ticket System**
+        <:welcome:1416092781717491744> **Welcome Images**
+        <:Reaction_role:1416093009686302740> **Reaction Role System**
+        <:System:1416093303254028308> **Systems Like**
+        <:Music:1416093815084683365> Advanced <:Spotify:1416093862707068928> **Music System** with **Audio Filtering**
+        <a:Games:1416093303254028308> **150+ Mini-games** and **Fun Commands**
+        <a:Admin:1416093303254028308> **Administration** and **Auto-Moderation** features
         ...and much more!`)
 
-        .addField("<a:How:1156234171207909540> **__How do you use me?__**",
+        .addField("<:System:1416093303254028308> **__How do you use me?__**",
         `>>> Use \`${prefix}setup\` and select what you want for your server in the given modules.
         You can also use \`${prefix}setup-music\` and \`${prefix}setup-welcome\``)
 
